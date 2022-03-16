@@ -84,7 +84,7 @@ export default class Dropdown extends PureComponent {
     disabled: PropTypes.bool,
 
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    onDropDownStateChanged: PropTypes.func(),
+    onDropDownStateChanged: PropTypes.func,
     data: PropTypes.arrayOf(PropTypes.object),
 
     valueExtractor: PropTypes.func,
