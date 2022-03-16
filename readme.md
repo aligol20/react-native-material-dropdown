@@ -19,6 +19,9 @@ Material dropdown with consistent behaviour on iOS and Android
 
 ![example][example-url]
 
+## Added Feature
+* Callback to handle DropDown state
+
 ## Features
 
 * Easy to use
@@ -32,7 +35,7 @@ Material dropdown with consistent behaviour on iOS and Android
 ## Installation
 
 ```bash
-npm install --save react-native-material-dropdown
+npm install --save https://github.com/aligol20/react-native-material-dropdown
 ```
 
 ## Usage
@@ -96,6 +99,8 @@ class Example extends Component {
  labelExtractor    | Extract label from item (args: item, index)   | Function | ({ label }) => label
  propsExtractor    | Extract props from item (args: item, index)   | Function | () => null
  onChangeText      | Selection callback (args: value, index, data) | Function | -
+ onDropDownStateChanged      | Selection callback (state: boolean) | Function | -
+
 
 Other [TextField][textfield], [TextInput][textinput] and [TouchableWithoutFeedback][touchable] properties will also work
 
