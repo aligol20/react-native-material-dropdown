@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { PureComponent } from "react";
 import { Pressable } from "react-native";
+import { Button } from "react-native-material-buttons";
 
 import styles from "./styles";
 
@@ -13,7 +14,7 @@ export default class DropdownItem extends PureComponent {
   };
 
   static propTypes = {
-    ...Pressable.propTypes,
+    ...Button.propTypes,
 
     index: PropTypes.number.isRequired,
   };
